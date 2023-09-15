@@ -6,6 +6,7 @@ import NavBar from "../components/NavBar/navBar";
 import Members from "../containers/Members/Members";
 import MemberProfile from "../containers/MemberProfile/MemberProfile";
 import Trainers from "../containers/trainers/Trainers";
+import Equipments from "../containers/Equipments/equipments";
 
 const HomeLayout = () => (
   <div className="h-screen w-full bg-[#1B1C31]">
@@ -33,6 +34,7 @@ const HomeLayout = () => (
             <Route path="/members" Component={Members} />
             <Route path="/members/:id" Component={MemberProfile} />
             <Route path="/trainers" Component={Trainers} />
+            <Route path="/equipments" Component={Equipments} />
           </Routes>
         </div>
       </div>
