@@ -7,10 +7,10 @@ import Members from "../containers/Members/Members";
 import Trainers from "../containers/trainers/Trainers";
 
 const HomeLayout = () => (
-  <div className="h-full w-full bg-[#1B1C31]">
+  <div className="h-screen w-full bg-[#1B1C31]">
     <BrowserRouter>
       <NavBar />
-      <div className="ml-[200px] font-[poppins] pb-[100px]">
+      <div className="ml-[200px] font-[poppins] pb-[100px] overflow-y-auto max-h-screen">
         <Routes>
           <Route path="/analytics" Component={Analytics} />
           <Route path="/members" Component={Members} />
