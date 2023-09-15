@@ -5,6 +5,7 @@ import EquipmentMetrics from "../../components/Analytics/EquipmentMetrics";
 import MaintenanceAlerts from "../../components/Analytics/MaintenanceAlerts";
 import TimeBased from "../../components/Analytics/TimeBased";
 import SpaceUtilization from "../../components/Analytics/SpaceUtilization";
+import Finances from "../../components/Analytics/Finances";
 
 const Analytics = () => {
   return (
@@ -31,6 +32,7 @@ const Analytics = () => {
       </div>
       <div className="flex justify-between pt-11">
         <SpaceUtilization />
+        <Finances />
       </div>
     </div>
   );
