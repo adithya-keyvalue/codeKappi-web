@@ -61,7 +61,7 @@ const Equipments = () => {
   return (
     <div className="pl-12 pr-[72px] pt-5">
       <div className="flex gap-6 justify-start items-center w-[60%]">
-        <div className="text-white font-semibold text-[20px]">Members</div>
+        <div className="text-white font-semibold text-[20px]">Equipments</div>
         <SearchBar placeHolder="Search Equipments" />
       </div>
       <div className="flex justify-between w-full px-10 text-white/50 pt-5">

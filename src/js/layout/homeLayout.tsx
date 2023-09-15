@@ -16,7 +16,7 @@ const HomeLayout = () => (
         <div className="ml-[200px] font-[poppins] pl-8 pt-12 pr-[72px]">
           <div className="flex justify-between">
             <div className="ml-4 text-2xl text-white">
-              Good Morning{" "}
+              Good Evening{" "}
               <span className="font-bold text-[#15BFFD] text-3xl">
                 John Doe
               </span>

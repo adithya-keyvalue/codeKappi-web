@@ -29,9 +29,9 @@ const EquipmentList: React.FC<{ equipment: any }> = ({ equipment }) => {
             {equipment.status}
           </div>
         </div>
-        <span className="w-1/5">
+        <button className="w-1/5">
           <img src="/icons/upload.png" alt="treadmill" className="h-10 pr-6" />
-        </span>
+        </button>
       </div>
     </div>
   );

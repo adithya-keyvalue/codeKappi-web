@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "chart.js/auto";
-import MemberMetrics from "../../components/Analytics/MemberMetrics";
-import EquipmentMetrics from "../../components/Analytics/EquipmentMetrics";
 import TrainerCard from "../../components/Trainers/trainerCard";
 import TeamsCard from "../../components/Trainers/teamsCard";
 import WorkingToday from "../../components/Trainers/workingToday";
@@ -70,7 +68,7 @@ const Trainers = () => {
       <div className="text-xl text-white  pt-11">Personal Trainers</div>
       <div className=" pt-8  flex justify-between">
         <div>
-          <div className="w-[740px] flex flex-wrap justify-between gap-3">
+          <div className="w-[66%] flex flex-wrap justify-between gap-3">
             {users.map((user) => {
               return (
                 <div>
