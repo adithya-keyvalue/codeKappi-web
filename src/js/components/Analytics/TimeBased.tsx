@@ -6,8 +6,7 @@ import {
   CategoryScale,
   LinearScale,
   PointElement,
-  LineController,
-  ScriptableContext,
+  LineController
 } from "chart.js";
 
 ChartJs.register(CategoryScale, LinearScale, PointElement, LineController);

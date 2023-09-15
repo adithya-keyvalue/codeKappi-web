@@ -44,9 +44,8 @@
 .exercise-summary {
   box-sizing: border-box;
   flex: 0 0 auto;
-  align-self: center;
-  padding-top: 11px;
-  padding-bottom: 252px;
+  align-self: start;
+  padding-top: 16px;
 }
 .svg-container {
   box-sizing: border-box;

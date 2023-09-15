@@ -4,17 +4,10 @@
       'header header header'
       'main right right'
       'main right right';
-    gap: 10px;
-    /* background-color: #2196F3; */
+    column-gap: 60px;
     padding: 10px;
   }
   
-  .grid-container > div {
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    /* text-align: center;
-    padding: 20px 0;
-    font-size: 30px; */
-  }
 
 .main-panel { grid-area: main; }
 .right-panel { grid-area: right; }
@@ -26,7 +19,7 @@
     align-items: stretch;
     justify-content: flex-start;
     min-width: 336px;
-    padding: 30px 31px 44px;
+    padding: 30px;
     background: #222338;
     border-radius: 12.5px;
     box-sizing: border-box;

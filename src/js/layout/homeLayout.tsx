@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Analytics from "../containers/analytics/Analytics";
 import NavBar from "../components/NavBar/navBar";
 import Members from "../containers/Members/Members";
+import MemberProfile from "../containers/MemberProfile/MemberProfile";
 import Trainers from "../containers/trainers/Trainers";
 
 const HomeLayout = () => (
@@ -20,9 +21,9 @@ const HomeLayout = () => (
               </span>
             </div>
             <div className="flex gap-10">
-              <img src="icons/help-icon.svg" alt="help" />
-              <img src="icons/alert-icon.svg" alt="alert" />
-              <img src="icons/profile-dp.svg" alt="profile" />
+              <img src="/icons/help-icon.svg" alt="help" />
+              <img src="/icons/alert-icon.svg" alt="alert" />
+              <img src="/icons/profile-dp.svg" alt="profile" />
             </div>
           </div>
         </div>
@@ -30,6 +31,7 @@ const HomeLayout = () => (
           <Routes>
             <Route path="/analytics" Component={Analytics} />
             <Route path="/members" Component={Members} />
+            <Route path="/members/:id" Component={MemberProfile} />
             <Route path="/trainers" Component={Trainers} />
           </Routes>
         </div>

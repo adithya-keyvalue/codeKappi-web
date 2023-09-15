@@ -66,18 +66,7 @@ const working= {
 
 const Trainers = () => {
   return (
-    <div className="ml-4 pl-8 pt-12 pr-[72px]">
-      <div className="flex justify-between">
-        <div className="text-2xl text-white">
-          Good Morning{" "}
-          <span className="font-bold text-[#15BFFD] text-3xl">John Doe</span>
-        </div>
-        <div className="flex gap-10">
-          <img src="icons/help-icon.svg" alt="help" />
-          <img src="icons/alert-icon.svg" alt="alert" />
-          <img src="icons/profile-dp.svg" alt="profile" />
-        </div>
-      </div>
+    <div className="ml-4 pl-8 pr-[72px]">
       <div className="text-xl text-white  pt-11">Personal Trainers</div>
       <div className=" pt-8  flex justify-between">
         <div>
