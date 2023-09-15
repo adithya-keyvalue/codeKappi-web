@@ -10,7 +10,7 @@ const HomeLayout = () => (
   <div className="h-full w-full bg-[#1B1C31]">
     <BrowserRouter>
       <NavBar />
-      <div className="ml-[200px] font-[poppins]">
+      <div className="ml-[200px] font-[poppins] pb-[100px]">
         <Routes>
           <Route path="/analytics" Component={Analytics} />
           <Route path="/members" Component={Members} />

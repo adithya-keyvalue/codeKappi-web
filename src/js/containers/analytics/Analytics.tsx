@@ -3,6 +3,7 @@ import "chart.js/auto";
 import MemberMetrics from "../../components/Analytics/MemberMetrics";
 import EquipmentMetrics from "../../components/Analytics/EquipmentMetrics";
 import MaintenanceAlerts from "../../components/Analytics/MaintenanceAlerts";
+import TimeBased from "../../components/Analytics/TimeBased";
 
 const Analytics = () => {
   return (
@@ -23,7 +24,7 @@ const Analytics = () => {
         <EquipmentMetrics />
       </div>
       <div className="flex justify-between pt-11">
-        <MemberMetrics />
+        <TimeBased />
         <MaintenanceAlerts />
       </div>
     </div>
