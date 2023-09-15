@@ -4,15 +4,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Analytics from "../containers/analytics/Analytics";
 import NavBar from "../components/NavBar/navBar";
 import Members from "../containers/Members/Members";
+import Trainers from "../containers/trainers/Trainers";
 
 const HomeLayout = () => (
-  <div className=" h-screen w-full bg-[#1B1C31]">
+  <div className="h-screen w-full bg-[#1B1C31]">
     <BrowserRouter>
       <NavBar />
-      <div className="ml-[200px] font-[poppins] overflow-y-auto max-h-screen">
+      <div className="ml-[200px] font-[poppins] pb-[100px] overflow-y-auto max-h-screen">
         <Routes>
           <Route path="/analytics" Component={Analytics} />
           <Route path="/members" Component={Members} />
+          <Route path="/trainers" Component={Trainers} />
         </Routes>
       </div>
     </BrowserRouter>
