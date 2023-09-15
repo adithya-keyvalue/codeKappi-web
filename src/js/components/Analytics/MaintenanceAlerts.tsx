@@ -29,8 +29,8 @@ const MaintenanceAlerts = () => {
   const navigate = useNavigate();
 
   return (
-    <>
-      <div className="pl-10 pt-[30px] pr-10 pb-8 w-[47%] bg-[#222338] rounded-xl h-fit">
+    <div>
+      <div className="pl-10 pt-[30px] pr-10 pb-8 bg-[#222338] rounded-xl h-fit">
         <div className="flex justify-between font-[Inter] text-white items-center mb-5">
           <div className="font-bold text-xl">Maintenance Alerts</div>
           <button
@@ -55,7 +55,7 @@ const MaintenanceAlerts = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
