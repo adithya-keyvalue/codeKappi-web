@@ -9,7 +9,7 @@ const WorkingToday: React.FC<{
   };
 }> = ({ working }) => {
   return (
-    <div className="w-[230px] bg-[#222338] rounded-xl px-[20px] py-[34px]">
+    <div className="bg-[#222338] rounded-xl px-[20px] py-[34px]">
       <div className="text-white items-center">
         <div className="font-bold">Working Today</div>
         <div className=" pt-[21px] h-[150px] flex flex-col justify-between">

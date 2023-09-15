@@ -2,7 +2,7 @@ import React from "react";
 const dividerStyle = {
   height: "1px",
   borderTop: "1px solid rgba(255, 255, 255, 0.10)",
-  margin: "12px 0", // Adjust margin as needed
+  margin: "12px", // Adjust margin as needed
 };
 
 const Divider = () => <div style={dividerStyle}></div>;
@@ -14,7 +14,7 @@ const TeamsCard: React.FC<{
   };
 }> = ({ teams }) => {
   return (
-    <div className="w-[230px] bg-[#222338] rounded-xl px-[20px] py-[34px]">
+    <div className="bg-[#222338] rounded-xl px-[20px] py-[34px]">
       <div className="flex justify-between font-[Inter] text-white items-center">
         <div>
           <div className="font-bold">Team</div>

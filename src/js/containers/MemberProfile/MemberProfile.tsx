@@ -16,10 +16,10 @@ const MemberProfile = () => {
         <div className="header-panel">
           <div className="profile-card flex">
             <div className="profile-image-container">
-              <img src="/Photo.png" alt="profile" className="profile-image" />
+              <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="profile" className="h-12 w-12" />
             </div>
             <div className="profile-details text-white">
-              <h2 className="profile-name">Jessica Jane</h2>
+              <h2 className="profile-name">Rebecca Newman</h2>
               <p className="profile-phone font-sm">+919605259680</p>
             </div>
           </div>
