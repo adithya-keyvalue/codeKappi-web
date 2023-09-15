@@ -5,6 +5,9 @@ import { mockData as workoutMock } from "./TodaysWorkoutComponent/mockData";
 import UserProfile from "./UserProfile";
 
 import "./styles.css";
+import Anatomy from "./MusculoSkeletal";
+import MuscleGroupChart from "./MussleGroupStat/MuscleGroupStatChart";
+import { WeightHistoryChart } from "./WeightHistory/WeightHistoryChart";
 
 const Members = () => {
   return (
@@ -23,23 +26,31 @@ const Members = () => {
         </div>
         <div className="main-panel">
           <div
-            style={{ marginRight: "48px", marginBottom: "48px" }}
+            style={{ marginBottom: "12px" }}
             data-ignore="used only for top most containter width"
           >
             <UserProfile />
           </div>
           <div
-            style={{ marginRight: "48px" }}
             data-ignore="used only for top most containter width"
           >
             <TodaySWorkout {...workoutMock} />
           </div>
         </div>
-        <div className="right-panel" >
-          <div className="weekly-muscle-activity text-white">
-            Weekly muscle activity
+        <div className="right-panel">
+          <div className="weekly-muscle-activity h-max">
+            <h2 className="text-white">Weekly muscle activity</h2>
+            <div className="grid-container">
+              <div className="main-panel">
+                <div style={{height:'324px'}}><MuscleGroupChart /></div>
+                <div style={{height:'324px'}}><WeightHistoryChart /></div>
+                </div>
+              <div className="right-panel" style={{height:'648px'}}>
+                <Anatomy />
+              </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
