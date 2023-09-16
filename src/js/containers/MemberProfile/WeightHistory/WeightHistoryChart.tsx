@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -8,8 +8,8 @@ import {
   Title,
   Tooltip,
   Legend,
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
+} from "chart.js";
+import { Line } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -23,19 +23,32 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
-
+  scales: {
+    y: {
+      beginAtZero: true,
+    },
+  },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July','August'];
+const labels = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+];
 
 export const data = {
   labels,
   datasets: [
     {
-      label: 'Weight',
-      data: [80,82,85,82,81,78,73,70],
-      borderColor: '#8D6AFF',
-      backgroundColor: 'rgba(141,106,255,0.2)',
+      label: "Weight",
+      data: [80, 82, 85, 82, 81, 78, 73, 70],
+      borderColor: "#8D6AFF",
+      backgroundColor: "rgba(141,106,255,0.2)",
     },
   ],
 };
