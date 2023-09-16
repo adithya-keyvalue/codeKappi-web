@@ -66,9 +66,9 @@ const Trainers = () => {
   return (
     <div className="ml-4 pl-8 pr-[72px]">
       <div className="text-xl text-white  pt-11">Personal Trainers</div>
-      <div className=" pt-8  flex justify-between">
+      <div className=" pt-8  flex">
         <div>
-          <div className="w-[73%] flex flex-wrap justify-between gap-3">
+          <div className="flex flex-wrap gap-3">
             {users.map((user) => {
               return (
                 <div>

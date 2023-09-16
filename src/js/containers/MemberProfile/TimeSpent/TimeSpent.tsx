@@ -30,28 +30,20 @@ export const options = {
   },
 };
 
-const labels = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-];
+const labels = ["Sep 9", "Sep 10", "Sep 11", "Sep 12", "Sep 13"];
 
 export const data = {
   labels,
   datasets: [
     {
-      label: "Weight",
-      data: [80, 82, 85, 82, 81, 78, 73, 70],
-      borderColor: "#4064FF"
+      label: "Time in minutes",
+      data: [72, 61, 65, 70, 47],
+      borderColor: "#EBAF78",
+      fill: false,
     },
   ],
 };
 
-export function WeightHistoryChart() {
+export function TimeSpent() {
   return <Line options={options} data={data} />;
 }

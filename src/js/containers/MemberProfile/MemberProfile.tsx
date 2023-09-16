@@ -8,6 +8,8 @@ import "./styles.css";
 import Anatomy from "./MusculoSkeletal";
 import MuscleGroupChart from "./MussleGroupStat/MuscleGroupStatChart";
 import { WeightHistoryChart } from "./WeightHistory/WeightHistoryChart";
+import { CaloriesBurned } from "./BFM-SMM/FatMassMuscleMassGraph";
+import { TimeSpent } from "./TimeSpent/TimeSpent";
 
 const MemberProfile = () => {
   return (
@@ -42,16 +44,27 @@ const MemberProfile = () => {
         <div className="right-panel">
           <div className="weekly-muscle-activity h-max">
             <h2 className="text-white">Weekly muscle activity</h2>
-            <div className="grid-container">
+            <div className="flex justify-between">
               <div className="main-panel flex flex-col justify-between items-center">
-                <div style={{ height: "324px" }} className="mb-10">
+                <div style={{ height: "224px" }}>
                   <MuscleGroupChart />
                 </div>
-                <div style={{ height: "300px", width: "400px" }}>
+                <div style={{ height: "200px", width: "400px" }}>
                   <WeightHistoryChart />
                 </div>
               </div>
-              <div className="right-panel" style={{ height: "704px" }}>
+              <div className="main-panel flex flex-col justify-between items-center">
+                <div
+                  style={{ height: "200px", width: "400px" }}
+                  className="mb-10"
+                >
+                  <TimeSpent />
+                </div>
+                <div style={{ height: "200px", width: "400px" }}>
+                  <CaloriesBurned />
+                </div>
+              </div>
+              <div className="right-panel" style={{ height: "504px" }}>
                 <Anatomy />
               </div>
             </div>

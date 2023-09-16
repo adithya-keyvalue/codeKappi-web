@@ -31,27 +31,31 @@ export const options = {
 };
 
 const labels = [
-  "January",
-  "February",
-  "March",
-  "April",
+  "Mar",
+  "Apr",
   "May",
-  "June",
-  "July",
-  "August",
+  "Jun",
+  "July"
 ];
 
 export const data = {
   labels,
   datasets: [
     {
-      label: "Weight",
-      data: [80, 82, 85, 82, 81, 78, 73, 70],
-      borderColor: "#4064FF"
+      label: "Body Fat Mass",
+      data: [19, 18, 17, 19, 18],
+      borderColor: "#EBAF78",
+      fill: false
     },
+    {
+        label: "Skeletel Muscle Mass",
+        data: [20, 17, 21, 18, 22],
+        borderColor: "#4064FF",
+        fill: false
+      },
   ],
 };
 
-export function WeightHistoryChart() {
+export function CaloriesBurned() {
   return <Line options={options} data={data} />;
 }

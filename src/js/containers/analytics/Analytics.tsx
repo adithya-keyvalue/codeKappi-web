@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "chart.js/auto";
 import MemberMetrics from "../../components/Analytics/MemberMetrics";
 import EquipmentMetrics from "../../components/Analytics/EquipmentMetrics";

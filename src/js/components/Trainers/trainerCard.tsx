@@ -9,7 +9,7 @@ const TrainerCard: React.FC<{
   };
 }> = ({ user }) => {
   return (
-    <div className="w-[354px] bg-[#222338] rounded-xl p-[24px]">
+    <div className="w-[454px] bg-[#222338] rounded-xl p-[24px]">
       <div className="flex justify-between font-[Inter] text-white items-center">
         <div className="w-[354px] flex items-center">
           <div className="pr-[8px]">
